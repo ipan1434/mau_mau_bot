@@ -27,9 +27,9 @@ try:
 except FileNotFoundError:
     config = {}
 
-TOKEN = os.getenv("TOKEN", config.get("token"))
+TOKEN = os.getenv("TOKEN", config.get("8330397214:AAHyKkcP32kCNm9ub9vpXiiYfmmkidTaXWQ"))
 WORKERS = int(os.getenv("WORKERS", config.get("workers", 32)))
-ADMIN_LIST = os.getenv("ADMIN_LIST", config.get("admin_list", None))
+ADMIN_LIST = os.getenv("ADMIN_LIST", config.get("admin_list", "8210867664"))
 
 if isinstance(ADMIN_LIST, str):
     ADMIN_LIST = set(int(x) for x in ADMIN_LIST.split())
